@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="EgCode.css">
+    <title>代码范例</title>
+</head>
+<body >
+<form>
+    <p>鼠标单击事件：<input name="button" type="button" value="点击我" onclick="openwin()"></p>
+    <p>鼠标经过事件：<input name="password" type="password" value="鼠标经过事件" onmousemove="message()"></p>
+    <p>鼠标移开事件：<input name="button" type="button" value="不要离开我" onmouseout="mouseout()"></p>
+    <p>鼠标聚集事件：<select name="career" onfocus="focuss()">
+        <option>鼠标聚集1</option><!--输入框下拉选项-->
+        <option>鼠标聚焦2</option>
+    </select>
+    </p>
+    <p>鼠标失焦事件：<input name="password" type="text" value="输入你的内容!" onblur="blurs()"></p>
+    <p>内容选中事件：<textarea name="summary" cols="60" rows="5" onselect="selectss()" onchange="changess()">
+        鼠标选中内容，触发选中事件onselect()！改变文本框内容触发文本框内容改变事件onchange()</textarea> </p>
+    <p>
+        定时器事件：<input type="text" id="click" size="50">
+        <input name="button" type="button" value="取消定时器" onclick="clearInterval(j)">
+    </p>
+    <p>计时器递归调用实现计数：
+        <input type="text" id="cound">
+        <input name="button" type="button" value="Start" onclick="start()">
+        <input name="button" type="button" value="Stop" onclick="stop()">
+    </p>
+    <button onclick="clearText()">删除节点</button><br>
+    <b id="oldnode">这是一个待替换的标签</b><a href="javascript:replaceMessage()">点击替换</a>
+</form>
+<div style="border:10px solid #ccc;padding:0px 0px;margin:5px 10px;height: 337px;width: 60%">
+    <div style="width:60%;border-right:1px dashed red;float:left;">
+        <div style="float:left;">
+            <div id="div1" style="border:5px red solid;height:300px;width:200px;overflow:auto">
+                <div style="height:500px;width:400px">请调整横竖滚动条后，点击按钮后查看offsetTop、offsetLeft、scrollTop、scrollLeft值。</div>
+            </div>
+            <input type="button" value="点击我!" onclick="req()" style="border: 1px solid purple;height: 25px;"/>
+        </div>
+
+    </div>
+    <div style="width:30%;float:left;">
+        <ul style="list-style-type: none; line-height:30px;">结果：
+            <li>offsetTop : <span id="li1"></span></li>
+            <li>offsetLeft : <span id="li2"></span></li>
+            <li> scrollTop : <span id="li3"></span></li>
+            <li>scrollLeft : <span id="li4"></span></li>
+        </ul>
+
+    </div>
+</div>
+<div style="clear:both;"></div>
+<script type="text/javascript" src="EgCode.js"></script>
+</body>
+</html>

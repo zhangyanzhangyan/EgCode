@@ -1,0 +1,9 @@
+*{
+    line-height: 1.5em;
+}
+
+.message{
+    width: 500px;
+    height: 80px;
+    background-color: cornflowerblue;
+}
